@@ -59,7 +59,7 @@ class Users extends Model
     }
     public function saveUpdate($params)
     {
-        if (empty($param['cols']['id'])) {
+        if (empty($params['cols']['id'])) {
             Session::push('errors', "không xác định bản ghi cập nhật");
         }
 

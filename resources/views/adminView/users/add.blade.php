@@ -133,7 +133,7 @@
                                             <button type="submit" class="btn btn-success"><i class="fas fa-plus"></i> Thêm mới</button>
                                         </div>
                                         <div class="col-sm-12 col-md-7 d-flex flex-row-reverse">
-                                            <a href="{{route('listUsersRoute')}}" class="btn btn-danger"> Quay lại</a>
+                                            <a href="{{route('listUsersRoute')}}" class="btn btn-danger"><i class="fas fa-arrow-left"></i> Quay lại</a>
                                         </div>
                                     </div>
 
