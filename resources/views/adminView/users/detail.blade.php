@@ -43,6 +43,7 @@
                             <!-- form start -->
                             <form id="quickForm" action="{{route('updateUsersRoute', ['id'=>request()->route('id')])}}" method="post" enctype="multipart/form-data" >
                                 @csrf
+                                <input type="hidden" name="id" value="{{$objItem->id}}">
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Tên người dùng</label>
@@ -78,7 +79,7 @@
                                             placeholder="nhập số điện thoại"
                                             value="{{$objItem->phoneNumber}}"
                                         >
-                                        <span style="color:red; font-weight:bold;">@error('phonNumber'){{$message}}@enderror</span>
+                                        <span style="color:red; font-weight:bold;">@error('phoneNumber'){{$message}}@enderror</span>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Mật khẩu</label>

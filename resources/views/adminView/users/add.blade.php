@@ -71,14 +71,14 @@
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Số điện thoại</label>
                                         <input
-                                            type="text"
+                                            type="number"
                                             name="phoneNumber"
                                             id="phoneNumber"
                                             class="form-control"
                                             placeholder="nhập số điện thoại"
                                             value="@isset($request['phoneNumber']){{ $request['phoneNumber'] }}@endisset"
                                         >
-                                        <span style="color:red; font-weight:bold;">@error('phonNumber'){{$message}}@enderror</span>
+                                        <span style="color:red; font-weight:bold;">@error('phoneNumber'){{$message}}@enderror</span>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Mật khẩu</label>
