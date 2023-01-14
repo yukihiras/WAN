@@ -1,5 +1,8 @@
 <!-- Header -->
 @include('adminView.component.headerAndScript');
+@php
+    $objUser = \Illuminate\Support\Facades\Auth::user();
+@endphp
 
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
